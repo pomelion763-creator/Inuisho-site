@@ -13,6 +13,13 @@ body {
     background-size: 20px 20px; /* グリッドの細かさ */
     text-align:center;
     color: var(--primary);
+
+    width: 100%;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    box-sizing: border-box; 
 }
 
 a {
@@ -25,6 +32,12 @@ a:hover {
     color: #DDDDDD;
     text-decoration: underline;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /*画像ホバーの色変え */
 a img:hover {
     transition: opacity 0.3s, opacity 0.3s;
