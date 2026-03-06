@@ -1,0 +1,31 @@
+:root {
+    --primary: #2f4f4f; /* カラーラベル */
+    --accent: #e8956f;
+    --light-bg: #faf9f7;
+    --grid-color:#f3f3f3;
+}
+
+body {
+    background-color: var(--light-bg);
+    background-image: 
+        linear-gradient(var(--grid-color) 2px, transparent 2px),
+        linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+    background-size: 20px 20px; /* グリッドの細かさ */
+    text-align:center;
+    color: var(--primary);
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: color 0.3s; /*色がふわっと変わる*/
+}
+/*テキストホバーの色変え */
+a:hover {
+    color: #DDDDDD;
+    text-decoration: underline;
+}
+/*画像ホバーの色変え */
+a img:hover {
+    transition: opacity 0.3s, opacity 0.3s;
+}
