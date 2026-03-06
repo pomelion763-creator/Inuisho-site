@@ -17,10 +17,23 @@ body {
     font-family: "Noto Sans JP", sans-serif;
 }
 
+h1 {
+    margin-bottom: -35px; 
+    line-height: 2;
+}
+
 a {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: inline-block;
+    margin-top: 0px;
     color: var(--primary);
     text-decoration: none;
     transition: color 0.3s; /*色がふわっと変わる*/
+}
+/*画像ホバーの色変え */
+a img:hover {
+    transition: opacity 0.3s, opacity 0.3s;
 }
 /*テキストホバーの色変え */
 a:hover {
@@ -36,14 +49,7 @@ a:hover {
     padding: 0 20px;
     box-sizing: border-box; 
 }
-.main h1 {
-    margin-bottom: -35px; 
-    line-height: 2;
-}
-.main a {
-    display: inline-block;
-    margin-top: 0px;
-}
+
 .main img {
     max-width: 100%;
     height: auto;
@@ -52,4 +58,12 @@ a:hover {
 /*画像ホバーの色変え */
 a img:hover {
     transition: opacity 0.3s, opacity 0.3s;
-}
+} 
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 20px; 
+        line-height: 1; 
+        word-break: break-all; 
+    }
+    }
