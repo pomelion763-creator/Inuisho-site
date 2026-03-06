@@ -12,27 +12,20 @@
 <div class="main">
 <h1>Welcome to InuiSho Works</h1>
 <a>いぬいしょうのホームページ（作成中）</a>
-
-
-<img src="images/work01.jpg" alt="Illustration-01" width="750">
-
-<iframe src="https://comic-days.com/episode/10044607041231903716/embed" width="560" height="400" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen" style="max-width:100%;"></iframe>
-</div>
-
-<!--- ランダム画像表記
-<div class="main">
-    <a href="log.html">
-        <script type="text/javascript">
+        <script type="text/javascript">{
             var imglist = [
-                "images\work01.jpg",
-                "images\work02.jpg",
-                "images\work03.png"
+                "images/work01.jpg",
+                "images/work02.jpg",
+                "images/work03.png",
             ];
             var selectnum = Math.floor(Math.random() * imglist.length);
-            var output = <img src="${imglist[selectnum]}">`;
+            var output = "<img src=" + imglist[selectnum] + ">";
             document.write(output);
+        }
         </script>
-    </a>
-</div> --->
+
+<h2>People</h2>
+<iframe src="https://comic-days.com/episode/10044607041231903716/embed" width="560" height="400" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen" style="max-width:100%;"></iframe>
+</div>
 
 </html>

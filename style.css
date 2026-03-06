@@ -22,6 +22,12 @@ h1 {
     line-height: 2;
 }
 
+h2 {
+    font-size: 20px;
+    margin-bottom: -15px; 
+    line-height: 1;
+}
+
 a {
     font-size: 18px;
     margin-bottom: 5px;
@@ -53,13 +59,14 @@ a:hover {
 .main img {
     max-width: 100%;
     height: auto;
+    width: 450px; height: 250px; object-fit: cover; /*サイズ固定 */
 }
 
 /*画像ホバーの色変え */
 a img:hover {
     transition: opacity 0.3s, opacity 0.3s;
 } 
-
+/*スマホ表示 */
 @media screen and (max-width: 480px) {
     h1 {
         font-size: 20px; 
@@ -67,7 +74,19 @@ a img:hover {
         word-break: break-all; 
         margin-bottom: -25px; 
     }
+
+    h2 {
+    font-size: 16px;
+    margin-bottom: -15px; 
+    line-height: 1;
+}
     a {
-    font-size: 14px;
+    font-size: 12px;
     }
+
+.main img {
+    max-width: 100%;
+    height: auto;
+    width: 450px; height: 200px; object-fit: cover;
+}
     }
