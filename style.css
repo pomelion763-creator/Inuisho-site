@@ -6,6 +6,7 @@
 }
 
 body {
+    white-space: pre-wrap; /*改行*/
     background-color: var(--light-bg);
     background-image: 
         linear-gradient(var(--grid-color) 2px, transparent 2px),
@@ -13,6 +14,7 @@ body {
     background-size: 20px 20px; /* グリッドの細かさ */
     text-align:center;
     color: var(--primary);
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 a {
@@ -34,7 +36,14 @@ a:hover {
     padding: 0 20px;
     box-sizing: border-box; 
 }
-
+.main h1 {
+    margin-bottom: -35px; 
+    line-height: 2;
+}
+.main a {
+    display: inline-block;
+    margin-top: 0px;
+}
 .main img {
     max-width: 100%;
     height: auto;
